@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Analytics Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Analytics Page</h1>
+
+        <!-- Overall Assessment Performance -->
+        <div class="overall-performance">
+            <h2>Overall Assessment Performance</h2>
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <!-- Question-Level Analysis -->
+        <div class="question-analysis">
+            <h2>Question-Level Analysis</h2>
+            <div id="question-details">
+                <!-- Question analytics details will be populated here -->
+            </div>
+        </div>
+
+        <!-- Student Performance Trends -->
+        <div class="student-performance-trends">
+            <h2>Student Performance Trends</h2>
+            <canvas id="trendsChart"></canvas>
+        </div>
+
+        <!-- Feedback and Improvement Areas -->
+        <div class="feedback-improvement">
+            <h2>Feedback and Improvement Areas</h2>
+            <ul id="improvement-areas">
+                <!-- Improvement areas will be listed here -->
+            </ul>
+        </div>
+
+        <!-- Export Reports -->
+        <div class="export-reports">
+            <h2>Export Reports</h2>
+            <button onclick="exportReport()">Export as PDF</button>
+        </div>
+
+        <!-- Comparison Tools -->
+        <div class="comparison-tools">
+            <h2>Comparison Tools</h2>
+            <button onclick="compareAssessments()">Compare Assessments</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
